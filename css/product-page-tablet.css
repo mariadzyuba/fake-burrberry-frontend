@@ -1,0 +1,566 @@
+.header {
+  padding: 1rem;
+  border-bottom: 1px solid #c6c6c6;
+}
+@media screen and (min-width: 48rem) {
+  .header {
+    padding: 1.5rem;
+  }
+}
+
+.header-logo {
+  display: block;
+  margin: auto;
+  width: 138px;
+  height: 10px;
+}
+
+.product-name {
+  margin-top: 1rem;
+  margin-right: 0;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-family: Lora, serif;
+  font-weight: 400;
+  color: #171717;
+}
+
+@media screen and (min-width: 48rem) {
+  .product-name {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+.product-gallery {
+  display: flex;
+  overflow-x: scroll;
+}
+
+@media (min-width: 48rem) {
+  .product-gallery {
+    margin: 0 0.5rem;
+  }
+}
+
+.product-gallery__item {
+  height: 100%;
+  width: auto;
+}
+
+/*.product-main {
+  padding: 1rem 1rem 2rem 1rem;
+}*/
+
+.product-main__info {
+  /*display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.0625rem;*/
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.product-main__info_price {
+  margin: 0;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #171717;
+}
+
+.product-main__info_number {
+  margin: 0;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #171717;
+}
+
+@media screen and (min-width: 48rem) {
+  .product-main__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: none;
+  }
+
+  .product-main__info {
+    margin: 0 0.5rem 1rem 0;
+  }
+
+  .product-main__info_price {
+    margin: 0;
+  }
+
+  }
+}
+
+.product-main__colour_name {
+  margin: 0;
+  font-family: Raleway, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: #171717;
+}
+
+.product-main__colour_button {
+  display: flex;
+  padding-top: 1.0625rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+@media screen and (min-width: 48rem) {
+    .product-main__colour_button {
+      border-bottom: 0;
+      }
+}
+
+.product-main__colour_button_select {
+  margin-right: 1rem;
+  padding: 1.25rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+}
+
+.product-main__colour_button_black {
+  background-color: #171717;
+}
+
+.product-main__colour_button_honey {
+  background-color: #cfa880;
+}
+
+.product-main__colour_button_active {
+  box-shadow: inset 0 0 0 1px #232122;
+}
+
+.product-buttons {
+  padding: 0 1rem 3.0625rem 0;
+  border-bottom: solid 1px #c6c6c6;
+}
+
+@media screen and (min-width: 48rem) {
+  .product-buttons {
+    border-bottom: 0;
+  }
+}
+
+.product-buttons__main {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-button__size,
+.product-button__store {
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  border: solid 1px #171717;
+  border-radius: 2px;
+  font-family: Raleway, sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.product-button__size {
+  background-color: #171717;
+  color: #ffffff;
+}
+
+.product-button__store {
+  background-color: #ffffff;
+  color: #171717;
+}
+
+.product-button__help {
+  display: block;
+  margin: 0;
+  margin-top: 0.5625rem;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  font-weight: 400;
+  color: #171717;
+  text-transform: uppercase;
+}
+
+.product-description {
+  border-bottom: solid 1px #c6c6c6;
+  padding: 2rem 1rem 1.9375rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .product-description {
+    border-bottom: 0;
+  }
+}
+
+.product-description__button {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.product-description__button_open::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+  width: 0.625rem;
+  height: 100%;
+  background-image: url("../img/triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 0.625rem 0.625rem;
+}
+
+.product-description__button_closed::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+  width: 0.625rem;
+  height: 100%;
+  background-image: url("../img/triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 0.625rem 0.625rem;
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 48rem) {
+  .product-description__button_open::after,
+  .product-description__button_closed::after {
+    background-image: none;
+  }
+}
+
+.product-description__title {
+  margin: 0;
+  font-family: Raleway, sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #171717;
+  text-transform: uppercase;
+}
+
+.product-description__text {
+  margin-top: 2.0625rem;
+}
+
+.product-description__text p,
+.product-description__text li {
+  margin: 0;
+  font-family: Lora, serif;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #171717;
+}
+
+.product-description__text ul {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-shipping {
+  border-bottom: solid 1px #c6c6c6;
+  padding: 2.0625rem 1rem 2rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .product-shipping {
+    display: none;
+  }
+}
+
+.product-delivery {
+  display: none;
+}
+
+@media screen and (min-width: 48rem) {
+  .product-delivery {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-delivery__image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .product-delivery__title {
+    margin: 0 0 1rem;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #171717;
+    text-transform: uppercase;
+  }
+
+  .product-delivery__content {
+    margin: 0 0 1.5rem;
+  }
+
+  .product-delivery__content:last-child {
+    margin: 0;
+  }
+
+  .product-delivery__content_title {
+    margin: 0 0 0.25rem;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.1666666667;
+  }
+
+  .product-delivery__content_text {
+    margin: 0;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+.recommend {
+  padding: 3rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recommend__title {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: solid 1px #171717;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  font-weight: 500;
+  color: #171717;
+  text-transform: uppercase;
+}
+
+/*.recommend__products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}*/
+
+.recommend__product {
+  flex-basis: 45%;
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+
+.recommend__product_img {
+  display: block;
+  width: 100%;
+}
+
+.recommend__product_title {
+  margin: 0.5rem 0;
+  font-family: Lora, serif;
+  font-size: 1rem;
+  line-height: 1.19;
+  font-weight: 400;
+  color: #171717;
+}
+
+.recommend__product_price {
+  margin: 0;
+  margin-left: 0.0625rem;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.17;
+  font-weight: 400;
+  color: #999999;
+}
+
+@media (min-width: 768px) {
+  .recommend {
+    padding: 1.5rem 0.5rem 2rem;
+  }
+
+  .recommend__title {
+    margin: 0 0 1rem;
+  }
+
+  .recommend__product {
+    width: 176px;
+  }
+
+  .recommend__product_img {
+    width: 176px;
+    height: 235px;
+  }
+}
+
+.more {
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.more__title {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: solid 1px #111111;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  font-weight: 500;
+  color: #171717;
+  text-transform: uppercase;
+}
+
+.more__link {
+  display: block;
+  margin-bottom: 1rem;
+  font-family: Lora, serif;
+  font-style: italic;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #171717;
+}
+
+@media screen and (min-width: 48rem) {
+  .more {
+    display: none;
+  }
+}
+
+
+.footer {
+  padding: 2.0625rem 1rem 2rem;
+  margin-top: 4rem;
+  background-color: #f3f3f3;
+}
+
+.footer__button {
+  display: block;
+  margin-bottom: 1.125rem;
+  padding: 0;
+  border: none;
+  background-color: #f3f3f3;
+  font-family: Raleway, Helvetica, serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.17;
+  color: #999999;
+}
+
+.footer__subtitle {
+  margin-top: 1.5625rem;
+  margin-bottom: 1rem;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  text-align: center;
+  color: #171717;
+}
+
+.footer__link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: Lora, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  color: #171717;
+}
+
+.footer-menu {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .footer {
+    padding: 2rem 0;
+  }
+
+  .footer__button {
+    display: inline-block;
+    margin-right: 1.5rem;
+  }
+
+  .footer__link,
+  .footer__subtitle {
+    display: none;
+  }
+
+  .footer-menu {
+    display: flex;
+    margin: 0 0 2rem;
+  }
+
+  /*.footer-menu__col {
+    width: 176px;
+    margin: 0 0.5rem;
+  }*/
+
+  .footer-menu__header {
+    margin: 0 0 1rem;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+
+  .footer-menu__nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-menu__link {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #999999;
+    text-decoration: none;
+  }
+
+  .footer-menu__link:last-child {
+    margin: 0;
+  }
+
+}
